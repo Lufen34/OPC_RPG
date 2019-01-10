@@ -25,4 +25,10 @@ public class Rodeur extends Personnage implements Competence {
     public int attaqueSpeciale(Personnage cible) {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Tadaaaa je suis le Rodeur joueur " + playerID + " niveau " + niveau + " je possède " + vie + " de vitalité, "
+                + force + " de force, " + agilité + " d'agilité et " + intel + " d'intelligence !";
+    }
 }

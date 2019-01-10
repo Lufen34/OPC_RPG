@@ -1,12 +1,12 @@
 public abstract class Personnage {
-    public Classe classe;
+    protected Classe classe;
     protected int niveau = 1;
     protected int vie = 100;
     protected int force = 0;
     protected int agilité = 0;
     protected int intel = 0;
+    protected int playerID;
     private static int amountPlayer = 0;
-    private int playerID;
 
 
     public Personnage(int niveau, int force, int agilité, int intel) {
@@ -71,8 +71,11 @@ public abstract class Personnage {
         this.intel = intel;
     }
 
-    @Override
-    public String toString() {
-        return "Personnage du Joueur " + playerID;
+    public Classe getClasse() {
+        return classe;
+    }
+
+    public void setClasse(Classe classe) {
+        this.classe = classe;
     }
 }

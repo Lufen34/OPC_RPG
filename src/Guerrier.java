@@ -25,4 +25,9 @@ public class Guerrier extends Personnage implements Competence {
     public int attaqueSpeciale(Personnage cible) {
         return 0;
     }
+    @Override
+    public String toString() {
+        return "Woarg je suis le Guerrier joueur " + playerID + " niveau " + niveau + " je possède " + vie + " de vitalité, "
+                + force + " de force, " + agilité + " d'agilité et " + intel + " d'intelligence !";
+    }
 }

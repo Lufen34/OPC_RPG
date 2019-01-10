@@ -1,4 +1,4 @@
-public abstract class Personnage {
+public class Personnage {
     protected Classe classe;
     protected int niveau = 1;
     protected int vie = 100;
@@ -29,6 +29,10 @@ public abstract class Personnage {
         this.vie = vie;
         amountPlayer++;
         playerID = amountPlayer;
+    }
+
+    public Personnage(){
+
     }
 
     public int getNiveau() {

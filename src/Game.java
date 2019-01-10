@@ -69,13 +69,10 @@ public class Game {
     }
 
     public Game() {
-        // Je sais que c'est pas très "charlie" mais j'ai pas le temps de corriger ça cette semaine.
-        joueur1 = new Guerrier(1);
-        joueur2 = new Guerrier(1);
         System.out.println("Création du personnage du Joueur 1:");
-        joueur1 = creationPersonnage(joueur1);
+        joueur1 = creationPersonnage(new Personnage());
         System.out.println(joueur1.toString());
-        joueur2 = creationPersonnage(joueur2);
+        joueur2 = creationPersonnage(new Personnage());
         System.out.println(joueur2.toString());
     }
 
